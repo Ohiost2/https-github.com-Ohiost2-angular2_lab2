@@ -1,0 +1,14 @@
+import { Anglular2Lab2Page } from './app.po';
+
+describe('anglular2-lab2 App', function() {
+  let page: Anglular2Lab2Page;
+
+  beforeEach(() => {
+    page = new Anglular2Lab2Page();
+  });
+
+  it('should display message saying app works', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('app works!');
+  });
+});
